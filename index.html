@@ -15,39 +15,56 @@
 
 </head>
 <body>
-
-    <header class="header">
+<header class="header">
         
-<a class="logo">RB</a>
-    <nav>
-            <a href="#home" class="nav">Home</a>
-            <a href="#about" class="nax">About Us</a>
-            <a href="#projects" class="nav">Projects</a>
-            <a href="#resume" class="nav">Resume</a>
-            <a href="#contact" class="nav">Contact</a>
-    </nav>
-
+<div id="cursor"></div>
+<div id="cursor-border"></div>
+<input type="button" data-cursor="pointer">
+<a class="logo">AJB</a>
+<input type="button" data-cursor="pointer2">
+        <nav>
+            <a href="#home" class="nav" input type="button" data-cursor="pointer2">Home</a>
+            <a href="#about" class="nav" input type="button" data-cursor="pointer2">About Me</a>
+            <a href="#projects" class="nav" input type="button" data-cursor="pointer2">Projects</a>
+            <a href="#resume" class="nav" input type="button" data-cursor="pointer2">Resume</a>
+            <a href="#contact" class="nav" input type="button" data-cursor="pointer2">Contact</a>
+        </nav>
 </header>
 
 
 <section id="home">
-    <h1 class="show-animate animate"> Hi, Welcome To Our Portfolio </h1>
-    <p class ="animate">This is Our Simple Website made by Evarine Rayon and Angel Justine Ballaso</p>
+    <p class="intro-id">Hi, my name is</p>
+    <h1 class="show-animate animate"> Evarine Rayon </h1>
+    <p class ="show-animate">Web Developer in Thailand</p>
     <a class="smoll">IT23C Elective 1 (Web System and Technologies)</a>
 </div>
 </section>
 <section id="about">
-    <h1 class="show-animate animate"> About Us </h1>
+    <h1 class="show-animate animate"> About Me </h1>
 
-		<h2>Our Mission</h2>
-		<p>Our mission is to provide the best possible services and products to our customers. We strive to be the leading provider in our industry and aim to surpass customer expectations at every turn.</p>
-		<h2>Our Team</h2>
-		<p>Our team is comprised of highly skilled professionals who have years of experience in their respective fields. Each team member is dedicated to delivering top-notch service and quality products to our customers.</p>
+    <h2 class="label">Ebarian</h2>
+    <p>Hey, my name is Evarine Rayon and I use Ebarian as my nickname across social medias. I’m a graphic designer, a UX/UI designer & front-end web developer from Thailand. I’m also passionate about pop music and make portraits and universes around what I listen to and I’m always curious to learn more when it comes to new technologies and creative coding.</p>
+    
+    <br><br>
+    <p>Some interesting information about me...</p>
+
+    <h3>My Hobbies</h3>
+    <ul>
+        <li>Hobby 1</li>
+        <li>Hobby 2</li>
+        <li>Hobby 3</li>
+    </ul>
 </section>
 
 <section id="projects">
     <h1 class="show-animate animate"> Projects </h1>
-    <p class ="animate">This is Our Simple Website made by Evarine Rayon and Angel Justine Ballaso</p>
+    <button class="project-button" data-project="project1">Project 1</button>
+    <button class="project-button" data-project="project2">Project 2</button>
+    <button class="project-button" data-project="project3">Project 3</button>
+
+    <div class="project" id="project1">Project 1 Details</div>
+    <div class="project" id="project2">Project 2 Details</div>
+    <div class="project" id="project3">Project 3 Details</div>
 </section>
 
 <section id="resume">
@@ -55,24 +72,37 @@
     <label for='una'>Evarine Rayon</label>
 <input id='una' type='checkbox' />
 <div class="tap1">
+
+<div class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    
+ <div class="experience">
+    <h2>Experience</h2>
+        <h2>Company Name</h2>
+        <p>Position: Web Developer</p>
+        <p>Dates: June 2020 - Present</p>
 </div>
-<section id="resume">
+</div>
+          </div> 
+          </div> 
+ </section>
+<!--- <section id="resume">
 <label for='duha'>Angel Justine Ballaso</label>
 <input id='duha' type='checkbox' />
 <div class="tap2">
-</div>
-
-</section>
+</div> --->
 
 <section id="contact">
     <h1 class="show-animate animate">Contact </h1>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-    
-    <button type="submit">Send</button>
+    <form name="myForm" action="/submit_contact" onsubmit="return validateForm()" method="post"> Name: <input type="text" name="fname" required>
+<br><br> Email: <input type="email" name="email" required><br><br> Phone: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+<br><br> Message: <textarea name="message" required></textarea>
+<br><br><input type="submit" value="Submit"> </form>
 </section>
  
  
