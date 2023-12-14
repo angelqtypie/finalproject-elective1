@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image:url('https://wallpapercave.com/wp/wp2856120.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px;
+    background-position-x: 300px;
+    background-color: rgb(0, 0, 0);
+}
+
+#home h1 {
+    font-size: 80px;
+    font-weight: 800;
+    color:aliceblue;
+    text-shadow: 0 0 10px red;
+
+}
+h2{
+    color:rgb(255, 255, 255);
+    text-shadow:0 0 10px rgb(251, 255, 0);
+}
+h1{
+    font-size: 80px;
+ font-weight: 800;
+ color:rgb(255, 255, 255);
+ text-shadow: 0 0 10px rgb(47, 0, 255); 
+
+}
+p{
+    font-size: 20px;
+    
+}
+a{
+    font-size: 15px;
+    color:aliceblue;
+}
+section .animate{
+    transition: 2s;
+
+}
+#home .animate,
+#about .animate,
+#projects .animate,
+#resume .animate,
+#contact .animate {
+    transform: translateX(-100px);
+}
+#home.show-animate .animate ,
+#about.show-animate .animate, 
+#projects.show-animate .animate,
+#resume.show-animate .animate,
+#contact.show-animate .animate{
+    transform: translateX(0);
+}
+
+#home p{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+}
+#about p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.541);
+    text-shadow: 0 0 10px rgb(17, 0, 255);
+}
+#projects p{
+    color: white;
+    text-shadow:0 0 10px yellow;
+
+}
+#resume p{
+    color:white;
+    text-shadow:0 0  10px green;
+
+}
+#resume .image1 img{
+    max-width: 200px;
+    margin: 0 30px
+}
+#resume .image2 img{
+    max-width: 200px;
+    margin: 0 30px
+}
+        
+        
+        footer{
+text-align: center;
+
+}
+footer p {
+    font-size: 12px;
+    background-color: transparent;
+}
+html{
+    scroll-behavior: smooth;
+}

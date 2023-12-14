@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    width:105%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+    
+}
+.logo{
+
+font-family: 'Open Sans', sans-serif;
+color: white;
+text-decoration:none;
+font-weight:700;
+
+}
+nav{
+    position:relative;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav a {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration:none;
+    margin-left: 40px;
+}
+nav a::before{
+    content: '';
+    position:absolute;
+    top: 100%;
+    left:0;
+    width: 0;
+    height:2px;
+    background: rgb(255, 255, 255);
+
+}
+nav a:hover::before{
+    width: 100%;
+    transition: .3s;
+    
+
+}
+section:nth-child(odd){
+    background-image: url('kittycat.gif');
+background-repeat: repeat;
+background-size: auto;
+background-position-y: -190px;
+background-position-x: -100px;
+}

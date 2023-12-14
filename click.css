@@ -1,0 +1,74 @@
+label[for='una'] {
+
+    color: rgb(0, 225, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 5px;
+    font-family: cursive;
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+    left:0px;
+    bottom:10px;
+    margin:90px;
+	cursor: pointer;
+}
+label[for='duha'] {
+    color: rgb(0, 225, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 5px;
+    font-family: cursive;
+    font-size: 20px;
+    display: inline-flex;
+    margin-bottom: 20px;
+    cursor: pointer; 
+    left:0px;
+    bottom:10px;
+    margin:90px;
+    cursor: pointer;
+}
+.tap1{
+    position:relative;
+    border: solid 2px #3f3b00;
+    border-radius: 4px;
+    display: none;
+    background: url('https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/342349440_232116196068910_6199876714040667176_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeEBuw3YQ-h4I0Hy_gm3aFnoStrA4vwLg7hK2sDi_AuDuKYfbNGzTCDkxiXk6aHz4zh8rkoXOAEIUw1UPTHwXiMt&_nc_ohc=En4izhDSbicAX_q-_v5&_nc_ht=scontent.fcgm1-1.fna&oh=00_AfB_hV2ZiNyIQKhJF4X37dxthdTEPwcfm_-OCqtjE_ImeA&oe=657E8E9B') no-repeat;
+    background-size: cover;
+    width:150px;
+    height: 150px;
+    margin: 190px;
+    left: 0px;
+    bottom: 270px;
+    cursor: pointer;
+ }
+ .tap2{
+        height:150px;
+        width:150px;
+        display:none;
+        border: solid 2px #141306;
+        background: url('https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/378466719_862930235458061_7403443481542864862_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeG4iYzaTY3DoldTwMeaZX0NG8Fp5G5ZGuEbwWnkblka4SFXiiOLhioR2g_h1-hC9wbjL1_J_I_Dqcd1uAxUD0OM&_nc_ohc=CfGlWNbS2cUAX-S47WV&_nc_ht=scontent.fcgm1-1.fna&oh=00_AfAoYsCdazfOXT-krbgLzAZ7VNcYzNqPuyen9ArvdNUp4Q&oe=657D4698');
+        background-size: cover;
+        width:150px;
+        height: 150px;
+        margin: -80px;
+    cursor: pointer;
+        text-align: center;
+        }
+        .tap2:hover{
+            background-image: url('https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/406750434_906353264449091_3056825145222831319_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHd_zVsDdf5N9YYyDiBUxqYNMZn6U1xnM00xmfpTXGczaCRftvgduQXywARHl8vaxRpuyUMePYJ3JZghrcyypcr&_nc_ohc=LPrl9q-iae0AX_o7-cq&_nc_ht=scontent.fcgm1-1.fna&oh=00_AfCmmXgylGLfN2fBG6lXusja50rxHjD8m8sROrhWXUpktQ&oe=657E96BA');
+        }
+   
+        input[type=checkbox] {
+            display:none;
+        }
+        input[type=checkbox]:checked + .tap {
+            display: block;
+        }
+        input[type=checkbox]:checked + .tap1 {
+            display: block;
+        }
+        input[type=checkbox]:checked + .tap2 {
+            display: block;
+        }
+        * {
+            box-sizing: border-box;
+        }
